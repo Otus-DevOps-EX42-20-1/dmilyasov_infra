@@ -1,7 +1,6 @@
 # dmilyasov_infra
 dmilyasov Infra repository
 
-
 Host bastion
   Hostname 35.210.201.224
   User appuser
