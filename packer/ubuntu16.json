@@ -2,6 +2,8 @@
       "variables": {
             "project_id": null,
             "source_image_family": null
+            "machine_type": null
+
       },
     "builders": [
         {
@@ -12,7 +14,6 @@
             "image_family": "reddit-base",
             "zone": "europe-west1-b",
             "ssh_username": "appuser",
-            "machine_type": "f1-micro",
             "disk_size": 10,
 	    "disk_type": "ssd",
 	    "image_description": "homework5",

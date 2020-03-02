@@ -1,4 +1,5 @@
 {
 "project_id": "infra-189607",
-"source_image_family": "debian-8"
+"source_image_family": "debian-8",
+"machine_type": "n1-standard-1"
 }
