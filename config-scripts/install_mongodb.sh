@@ -1,5 +1,5 @@
 #!/bin/bash
-#wget -qO - https://www.mongodb.org/static/pgp/server-3.6.asc | sudo apt-key add -
+set -e-
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xd68fa50fea312927
 sudo bash -c 'echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list'
 
