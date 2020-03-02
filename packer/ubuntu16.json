@@ -1,9 +1,8 @@
 {
       "variables": {
             "project_id": null,
-            "source_image_family": null
+            "source_image_family": null,
             "machine_type": null
-
       },
     "builders": [
         {
