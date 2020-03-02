@@ -9,6 +9,7 @@
         {
             "project_id": "{{user `project_id`}}",
             "source_image_family": "{{user `source_image_family`}}",
+            "machine_type": "{{user `machine_type`}}",
             "type": "googlecompute",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
