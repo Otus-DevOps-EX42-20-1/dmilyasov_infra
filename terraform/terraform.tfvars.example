@@ -1,0 +1,4 @@
+project          = "infra202002"
+public_key_path  = "~/.ssh/rootssh.pub"
+private_key_path = "~/.ssh/rootssh"
+disk_image       = "debian-8"

@@ -1,3 +1,9 @@
 .pre-commit-config.yaml
 *.tmp
 variables.json
+variables.tf
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
