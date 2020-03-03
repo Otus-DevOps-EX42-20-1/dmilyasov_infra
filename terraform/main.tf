@@ -5,8 +5,7 @@ terraform {
 provider "google" {
   version = "2.15.0"
   project = var.project
-  # region = var.region
-  region = "europe-west1"
+  region  = "europe-west1"
 }
 
 resource "google_compute_instance" "app" {
