@@ -9,9 +9,3 @@ module "storage-bucket" {
 output storage-bucket_url {
   value = module.storage-bucket.url
 }
-
-provider "google" {
-  version = "~> 2.15"
-  project = var.project
-  region  = var.region
-}
