@@ -1,0 +1,28 @@
+{
+      "variables": {
+	    "disk_size": "10",
+	    "disk_type": "pd-ssd",
+	    "image_description": "server app Ruby",
+	    "network": "default",
+	    "tags": "puma-server"
+      },
+    "builders": [
+        {
+	    "project_id": "{{user `project_id`}}",
+            "source_image_family": "{{user `source_image_family`}}",
+            "type": "googlecompute",
+            "image_name": "reddit-app-base-{{timestamp}}",
+            "image_family": "reddit-app-base",
+            "zone": "europe-west1-b",
+            "ssh_username": "appuser"
+
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/install_ruby.sh",
+            "execute_command": "sudo {{.Path}}"
+        }
+    ]
+}
